@@ -1,0 +1,1 @@
+export default function Hero(){return(<section className='h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 via-fuchsia-600 to-rose-500 text-white'>Hero</section>);}

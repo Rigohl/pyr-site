@@ -1,0 +1,3 @@
+## Aviso de Privacidad – PLANTILLA (revisar con abogado)
+
+...

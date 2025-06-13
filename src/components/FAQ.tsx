@@ -1,0 +1,1 @@
+export default function FAQ(){return(<section className='p-10'>FAQ</section>);}

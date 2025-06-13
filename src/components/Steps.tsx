@@ -1,0 +1,1 @@
+export default function Steps(){return(<section className='p-10 bg-gray-50'>Steps</section>);}

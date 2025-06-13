@@ -1,0 +1,1 @@
+export default function AboutUs(){return(<section className='p-10 bg-gray-50'>About Us</section>);}
