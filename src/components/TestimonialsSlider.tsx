@@ -1,1 +1,3 @@
-export default function TestimonialsSlider(){return(<section className='p-10'>Testimonials</section>);}
+export default function TestimonialsSlider() {
+  return <section><h2>TestimonialsSlider</h2></section>;
+}

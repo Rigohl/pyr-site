@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PYH Entertainment - Canciones Personalizadas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>PYH Entertainment</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#paquetes">Paquetes</a></li>
+        <li><a href="#formulario">Encargar Canción</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Regala Canciones Únicas</h2>
+    <p>Creamos canciones y videos personalizados con IA y artistas reales. Sorprende con algo que toca el corazón.</p>
+    <a href="#formulario" class="btn">Encargar ahora</a>
+  </section>
+
+  <section id="paquetes">
+    <h2>Paquetes</h2>
+    <div class="paquete">
+      <h3>Básico</h3>
+      <p>Canción en MP3 con letra personalizada.</p>
+    </div>
+    <div class="paquete">
+      <h3>Pro</h3>
+      <p>Incluye portada animada y selección de voz/género.</p>
+    </div>
+    <div class="paquete">
+      <h3>Estrella</h3>
+      <p>Video tipo karaoke, edición avanzada y entrega prioritaria.</p>
+    </div>
+  </section>
+
+  <section id="formulario">
+    <h2>Encarga tu Canción</h2>
+    <form action="#" method="post">
+      <label>Nombre del destinatario:</label>
+      <input type="text" name="nombre" required />
+
+      <label>Género musical (elige 1 o 2):</label>
+      <input type="text" name="genero" required />
+
+      <label>Tipo de voz:</label>
+      <select name="voz">
+        <option value="femenina">Femenina</option>
+        <option value="masculina">Masculina</option>
+        <option value="indiferente">Indiferente</option>
+      </select>
+
+      <label>Letra o historia deseada:</label>
+      <textarea name="letra" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer id="contacto">
+    <p>&copy; 2025 PYH Entertainment | Contáctanos: pyh@entertainment.mx</p>
+  </footer>
+</body>
+</html>

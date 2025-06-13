@@ -1,1 +1,3 @@
-export default function Hero(){return(<section className='h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 via-fuchsia-600 to-rose-500 text-white'>Hero</section>);}
+export default function Hero() {
+  return <section><h2>Hero</h2></section>;
+}

@@ -1,1 +1,3 @@
-export default function Steps(){return(<section className='p-10 bg-gray-50'>Steps</section>);}
+export default function Steps() {
+  return <section><h2>Steps</h2></section>;
+}

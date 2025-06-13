@@ -1,1 +1,3 @@
-export default function Navbar(){return(<nav className='p-4 fixed w-full bg-white shadow'>Navbar</nav>);}
+export default function Navbar() {
+  return <section><h2>Navbar</h2></section>;
+}
