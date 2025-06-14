@@ -1,17 +1,22 @@
-const { https } = require("firebase-functions");
-const { default: next } = require("next");
-const path = require("path");
+import { https } from "firebase-functions";
+import next from "next";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const isDev = process.env.NODE_ENV !== "production";
 
 const server = next({
   dev: isDev,
-  // La carpeta .next está un nivel arriba de la carpeta /functions
-  conf: { distDir: path.join("..", ".next") },
+  conf: {
+    distDir: path.join(__dirname, "..", ".next")
+  }
 });
 
 const nextjsHandle = server.getRequestHandler();
 
-exports.nextServer = https.onRequest((req, res) => {
+export const nextServer = https.onRequest((req, res) => {
   return server.prepare().then(() => nextjsHandle(req, res));
 });
