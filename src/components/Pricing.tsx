@@ -1,1 +1,0 @@
-export default function Pricing(){return(<section className='p-10'>Pricing</section>);}

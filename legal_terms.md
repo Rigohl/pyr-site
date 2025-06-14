@@ -1,3 +1,0 @@
-## Términos y Condiciones – PLANTILLA (revisar con abogado)
-
-...
