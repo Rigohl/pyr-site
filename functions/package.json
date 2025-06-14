@@ -1,7 +1,7 @@
 {
   "name": "functions",
+  "description": "Cloud Functions for Firebase",
   "main": "lib/index.js",
-  "type": "commonjs",
   "scripts": {
     "build": "tsc",
     "serve": "npm run build && firebase emulators:start --only functions",
@@ -20,5 +20,6 @@
   },
   "devDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "private": true
 }

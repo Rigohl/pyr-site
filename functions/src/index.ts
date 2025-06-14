@@ -4,10 +4,13 @@ import path from "path";
 
 const isDev = process.env.NODE_ENV !== "production";
 
+// Determina la ruta correcta al directorio del proyecto principal
+const projectRoot = path.join(__dirname, "..", "..");
+
 const nextServer = next({
   dev: isDev,
-  // La ubicación del directorio de build de Next.js
-  conf: { distDir: path.join(process.cwd(), ".next") },
+  // Construye la ruta al directorio .next desde la raíz del proyecto
+  conf: { distDir: path.join(projectRoot, ".next") },
 });
 
 const nextjsHandle = nextServer.getRequestHandler();
@@ -22,8 +25,8 @@ export const nextServer = onRequest(
       await nextServer.prepare();
       return await nextjsHandle(req, res);
     } catch (error) {
-      console.error("Error handling request with Next.js:", error);
-      res.status(500).send("Internal Server Error");
+      console.error("Error al manejar la solicitud con Next.js:", error);
+      res.status(500).send("Error Interno del Servidor");
     }
   }
 );
