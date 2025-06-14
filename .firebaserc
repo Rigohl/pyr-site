@@ -1,5 +1,15 @@
 {
-  "projects": {
-    "default": "pyr-entertainment"
+  "hosting": {
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "nextServer"
+      }
+    ]
+  },
+  "functions": {
+    "source": "functions"
   }
 }
