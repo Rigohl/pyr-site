@@ -1,7 +1,11 @@
 {
   "hosting": {
     "public": "public",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
         "source": "**",
@@ -11,5 +15,8 @@
   },
   "functions": {
     "source": "functions"
+  },
+  "projects": {
+    "default": "pyh-entertainment"
   }
 }
