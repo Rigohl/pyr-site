@@ -1,23 +1,20 @@
-// functions/src/index.ts
-
-import { onRequest } from "firebase-functions/v2/https";
+import { https } from "firebase-functions";
 import next from "next";
 import path from "path";
+import { fileURLToPath } from "url";
 
-const app = next({
-  dev: false,
-  conf: {
-    // ⚠️ IMPORTANTE: apúntalo al build standalone
-    distDir: path.join("..", ".next"),
-  },
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const isDev = process.env.NODE_ENV !== "production";
+
+const server = next({
+  dev: isDev,
+  conf: { distDir: path.join(__dirname, "..", ".next") },
 });
 
-const handler = app.getRequestHandler();
+const nextjsHandle = server.getRequestHandler();
 
-export const nextServer = onRequest(
-  { timeoutSeconds: 60, memory: "1GiB" },
-  async (req, res) => {
-    await app.prepare();
-    handler(req, res);
-  }
-);
+export const nextServer = https.onRequest((req, res) => {
+  return server.prepare().then(() => nextjsHandle(req, res));
+});
