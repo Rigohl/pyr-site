@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     "baseUrl": ".",
     "paths": {
       "@/*": [
@@ -13,12 +11,6 @@
       "dom.iterable",
       "esnext"
     ],
-=======
-    "lib": ["dom", "dom.iterable", "esnext"],
->>>>>>> Stashed changes
-=======
-    "lib": ["dom", "dom.iterable", "esnext"],
->>>>>>> Stashed changes
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -30,17 +22,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    },
     "plugins": [
       {
         "name": "next"
       }
     ]
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   },
   "include": [
     "next-env.d.ts",
@@ -50,11 +36,4 @@
   "exclude": [
     "node_modules"
   ]
-=======
-  }
->>>>>>> Stashed changes
 }
-=======
-  }
-}
->>>>>>> Stashed changes
