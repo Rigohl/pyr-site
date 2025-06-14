@@ -1,0 +1,226 @@
+[debug] [2025-06-14T07:35:17.964Z] ----------------------------------------------------------------------
+[debug] [2025-06-14T07:35:17.966Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions,hosting
+[debug] [2025-06-14T07:35:17.967Z] CLI Version:   14.7.0
+[debug] [2025-06-14T07:35:17.967Z] Platform:      win32
+[debug] [2025-06-14T07:35:17.967Z] Node Version:  v22.16.0
+[debug] [2025-06-14T07:35:17.968Z] Time:          Sat Jun 14 2025 01:35:17 GMT-0600 (hora estándar central)
+[debug] [2025-06-14T07:35:17.968Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-14T07:35:18.212Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-14T07:35:18.213Z] > authorizing via signed-in user (rigobertohula@gmail.com)
+[debug] [2025-06-14T07:35:18.213Z] [iam] checking project pyh-entertainment for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-06-14T07:35:18.214Z] Checked if tokens are valid: true, expires at: 1749888321264
+[debug] [2025-06-14T07:35:18.214Z] Checked if tokens are valid: true, expires at: 1749888321264
+[debug] [2025-06-14T07:35:18.215Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pyh-entertainment:testIamPermissions [none]
+[debug] [2025-06-14T07:35:18.215Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pyh-entertainment:testIamPermissions x-goog-quota-user=projects/pyh-entertainment
+[debug] [2025-06-14T07:35:18.215Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pyh-entertainment:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-14T07:35:18.502Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pyh-entertainment:testIamPermissions 200
+[debug] [2025-06-14T07:35:18.503Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pyh-entertainment:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-14T07:35:18.503Z] Checked if tokens are valid: true, expires at: 1749888321264
+[debug] [2025-06-14T07:35:18.503Z] Checked if tokens are valid: true, expires at: 1749888321264
+[debug] [2025-06-14T07:35:18.503Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/pyh-entertainment/serviceAccounts/pyh-entertainment@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-06-14T07:35:18.503Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/pyh-entertainment/serviceAccounts/pyh-entertainment@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-06-14T07:35:18.698Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/pyh-entertainment/serviceAccounts/pyh-entertainment@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-06-14T07:35:18.698Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/pyh-entertainment/serviceAccounts/pyh-entertainment@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-06-14T07:35:18.699Z] Checked if tokens are valid: true, expires at: 1749888321264
+[debug] [2025-06-14T07:35:18.699Z] Checked if tokens are valid: true, expires at: 1749888321264
+[debug] [2025-06-14T07:35:18.699Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pyh-entertainment [none]
+[debug] [2025-06-14T07:35:18.933Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pyh-entertainment 200
+[debug] [2025-06-14T07:35:18.933Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pyh-entertainment {"projectId":"pyh-entertainment","projectNumber":"252819289014","displayName":"pyh-entertainment","name":"projects/pyh-entertainment","resources":{"hostingSite":"pyh-entertainment"},"state":"ACTIVE","etag":"1_8c4f4d5f-3e35-4e16-a47b-3ae61e3e2120"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-06-14T07:35:26.230Z] Checked if tokens are valid: true, expires at: 1749888321264
+[debug] [2025-06-14T07:35:26.230Z] Checked if tokens are valid: true, expires at: 1749888321264
+[debug] [2025-06-14T07:35:26.230Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/pyh-entertainment/sites/pyh-entertainment [none]
+[debug] [2025-06-14T07:35:26.459Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/pyh-entertainment/sites/pyh-entertainment 200
+[debug] [2025-06-14T07:35:26.459Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/pyh-entertainment/sites/pyh-entertainment {"name":"projects/pyh-entertainment/sites/pyh-entertainment","defaultUrl":"https://pyh-entertainment.web.app","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] Failed to compile.
+
+
+[info] ./src/app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/globals.css
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (C:\Users\DELL\Downloads\pyr-site\node_modules\tailwindcss\dist\lib.js:35:2121)
+    at LazyResult.runOnRoot (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:329:16)
+    at LazyResult.runAsync (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:258:26)
+    at LazyResult.async (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:160:30)
+    at LazyResult.then (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:404:17)
+
+Import trace for requested module:
+./src/app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/globals.css
+./src/app/globals.css
+
+./src/app/globals.css
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (C:\Users\DELL\Downloads\pyr-site\node_modules\tailwindcss\dist\lib.js:35:2121)
+    at LazyResult.runOnRoot (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:329:16)
+    at LazyResult.runAsync (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:258:26)
+    at LazyResult.async (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:160:30)
+    at LazyResult.then (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:404:17)
+    at tryRunOrWebpackError (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:312989)
+    at __webpack_require_module__ (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:131165)
+    at __nested_webpack_require_153728__ (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:130607)
+    at C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:131454
+    at symbolIterator (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\neo-async\async.js:1:14444)
+    at done (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\neo-async\async.js:1:14824)
+    at Hook.eval [as callAsync] (eval at create (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:15:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:13:26012)
+    at C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:130328
+    at symbolIterator (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\neo-async\async.js:1:14402)
+-- inner error --
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (C:\Users\DELL\Downloads\pyr-site\node_modules\tailwindcss\dist\lib.js:35:2121)
+    at LazyResult.runOnRoot (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:329:16)
+    at LazyResult.runAsync (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:258:26)
+    at LazyResult.async (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:160:30)
+    at LazyResult.then (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:404:17)
+    at Object.<anonymous> (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[13].oneOf[12].use[2]!C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[13].oneOf[12].use[3]!C:\Users\DELL\Downloads\pyr-site\src\app\globals.css:1:7)
+    at C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:922493
+    at Hook.eval [as call] (eval at create (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:13:28636), <anonymous>:7:1)
+    at Hook.CALL_DELEGATE [as _call] (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:13:25906)
+    at C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:131198
+    at tryRunOrWebpackError (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:312943)
+    at __webpack_require_module__ (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:131165)
+    at __nested_webpack_require_153728__ (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:130607)
+    at C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:131454
+    at symbolIterator (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\neo-async\async.js:1:14444)
+
+Generated code for C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[13].oneOf[12].use[2]!C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[13].oneOf[12].use[3]!C:\Users\DELL\Downloads\pyr-site\src\app\globals.css
+
+Import trace for requested module:
+./src/app/globals.css
+
+
+[info] 
+
+[info] > Build failed because of webpack errors
+
+[debug] [2025-06-14T07:35:39.425Z] Error: ENOENT: no such file or directory, open 'C:\Users\DELL\Downloads\pyr-site\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-06-14T07:39:54.646Z] ----------------------------------------------------------------------
+[debug] [2025-06-14T07:39:54.649Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions,hosting
+[debug] [2025-06-14T07:39:54.649Z] CLI Version:   14.7.0
+[debug] [2025-06-14T07:39:54.650Z] Platform:      win32
+[debug] [2025-06-14T07:39:54.650Z] Node Version:  v22.16.0
+[debug] [2025-06-14T07:39:54.650Z] Time:          Sat Jun 14 2025 01:39:54 GMT-0600 (hora estándar central)
+[debug] [2025-06-14T07:39:54.651Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-14T07:39:54.883Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-14T07:39:54.884Z] > authorizing via signed-in user (rigobertohula@gmail.com)
+[debug] [2025-06-14T07:39:54.884Z] [iam] checking project pyh-entertainment for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-06-14T07:39:54.885Z] Checked if tokens are valid: true, expires at: 1749888321264
+[debug] [2025-06-14T07:39:54.885Z] Checked if tokens are valid: true, expires at: 1749888321264
+[debug] [2025-06-14T07:39:54.886Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pyh-entertainment:testIamPermissions [none]
+[debug] [2025-06-14T07:39:54.886Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pyh-entertainment:testIamPermissions x-goog-quota-user=projects/pyh-entertainment
+[debug] [2025-06-14T07:39:54.886Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pyh-entertainment:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-14T07:39:55.143Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pyh-entertainment:testIamPermissions 200
+[debug] [2025-06-14T07:39:55.143Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pyh-entertainment:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-14T07:39:55.144Z] Checked if tokens are valid: true, expires at: 1749888321264
+[debug] [2025-06-14T07:39:55.144Z] Checked if tokens are valid: true, expires at: 1749888321264
+[debug] [2025-06-14T07:39:55.144Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/pyh-entertainment/serviceAccounts/pyh-entertainment@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-06-14T07:39:55.144Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/pyh-entertainment/serviceAccounts/pyh-entertainment@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-06-14T07:39:55.305Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/pyh-entertainment/serviceAccounts/pyh-entertainment@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-06-14T07:39:55.305Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/pyh-entertainment/serviceAccounts/pyh-entertainment@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-06-14T07:39:55.306Z] Checked if tokens are valid: true, expires at: 1749888321264
+[debug] [2025-06-14T07:39:55.306Z] Checked if tokens are valid: true, expires at: 1749888321264
+[debug] [2025-06-14T07:39:55.306Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pyh-entertainment [none]
+[debug] [2025-06-14T07:39:55.521Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pyh-entertainment 200
+[debug] [2025-06-14T07:39:55.522Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pyh-entertainment {"projectId":"pyh-entertainment","projectNumber":"252819289014","displayName":"pyh-entertainment","name":"projects/pyh-entertainment","resources":{"hostingSite":"pyh-entertainment"},"state":"ACTIVE","etag":"1_8c4f4d5f-3e35-4e16-a47b-3ae61e3e2120"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-06-14T07:40:01.730Z] Checked if tokens are valid: true, expires at: 1749888321264
+[debug] [2025-06-14T07:40:01.730Z] Checked if tokens are valid: true, expires at: 1749888321264
+[debug] [2025-06-14T07:40:01.730Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/pyh-entertainment/sites/pyh-entertainment [none]
+[debug] [2025-06-14T07:40:01.917Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/pyh-entertainment/sites/pyh-entertainment 200
+[debug] [2025-06-14T07:40:01.917Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/pyh-entertainment/sites/pyh-entertainment {"name":"projects/pyh-entertainment/sites/pyh-entertainment","defaultUrl":"https://pyh-entertainment.web.app","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 14.2.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] Failed to compile.
+
+
+[info] ./src/app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/globals.css
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (C:\Users\DELL\Downloads\pyr-site\node_modules\tailwindcss\dist\lib.js:35:2121)
+    at LazyResult.runOnRoot (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:329:16)
+    at LazyResult.runAsync (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:258:26)
+    at LazyResult.async (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:160:30)
+    at LazyResult.then (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:404:17)
+
+Import trace for requested module:
+./src/app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/globals.css
+./src/app/globals.css
+
+./src/app/globals.css
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (C:\Users\DELL\Downloads\pyr-site\node_modules\tailwindcss\dist\lib.js:35:2121)
+    at LazyResult.runOnRoot (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:329:16)
+    at LazyResult.runAsync (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:258:26)
+    at LazyResult.async (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:160:30)
+    at LazyResult.then (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:404:17)
+    at tryRunOrWebpackError (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:312989)
+    at __webpack_require_module__ (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:131165)
+    at __nested_webpack_require_153728__ (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:130607)
+    at C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:131454
+    at symbolIterator (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\neo-async\async.js:1:14444)
+    at done (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\neo-async\async.js:1:14824)
+    at Hook.eval [as callAsync] (eval at create (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:13:28858), <anonymous>:15:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:13:26012)
+    at C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:130328
+    at symbolIterator (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\neo-async\async.js:1:14402)
+-- inner error --
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    at We (C:\Users\DELL\Downloads\pyr-site\node_modules\tailwindcss\dist\lib.js:35:2121)
+    at LazyResult.runOnRoot (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:329:16)
+    at LazyResult.runAsync (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:258:26)
+    at LazyResult.async (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:160:30)
+    at LazyResult.then (C:\Users\DELL\Downloads\pyr-site\node_modules\next\node_modules\postcss\lib\lazy-result.js:404:17)
+    at Object.<anonymous> (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[13].oneOf[12].use[2]!C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[13].oneOf[12].use[3]!C:\Users\DELL\Downloads\pyr-site\src\app\globals.css:1:7)
+    at C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:922493
+    at Hook.eval [as call] (eval at create (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:13:28636), <anonymous>:7:1)
+    at Hook.CALL_DELEGATE [as _call] (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:13:25906)
+    at C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:131198
+    at tryRunOrWebpackError (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:312943)
+    at __webpack_require_module__ (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:131165)
+    at __nested_webpack_require_153728__ (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:130607)
+    at C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\webpack\bundle5.js:28:131454
+    at symbolIterator (C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\compiled\neo-async\async.js:1:14444)
+
+Generated code for C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[13].oneOf[12].use[2]!C:\Users\DELL\Downloads\pyr-site\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[13].oneOf[12].use[3]!C:\Users\DELL\Downloads\pyr-site\src\app\globals.css
+
+Import trace for requested module:
+./src/app/globals.css
+
+
+[info] 
+
+[info] > Build failed because of webpack errors
+
+[debug] [2025-06-14T07:40:11.557Z] Error: ENOENT: no such file or directory, open 'C:\Users\DELL\Downloads\pyr-site\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
